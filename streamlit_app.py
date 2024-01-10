@@ -61,7 +61,7 @@ try:
     streamlit.dataframe(back_from_function)
 
 
-streamlit.write("The user entered", fruit_choice)
+#streamlit.write("The user entered", fruit_choice)
 
 #############  Below code moved above into the else statement  #################
 #requests being used here
