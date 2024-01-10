@@ -28,7 +28,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #display the table on the page
 streamlit.dataframe(fruits_to_show)
 
-streamlit.stop()
+
 
 #New Section to display fruityvice api response
 streamlit.header("Fruityvice Fruit Advice!")
@@ -76,6 +76,8 @@ try:
 #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #output it to the screen as a table
 #streamlit.dataframe(fruityvice_normalized)
+
+st.stop()
 
 #Snowflake being used here
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
