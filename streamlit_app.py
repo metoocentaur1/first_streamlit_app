@@ -61,6 +61,8 @@ try:
         streamlit.dataframe(back_from_function)
 
 
+streamlit.stop()
+
 #streamlit.write("The user entered", fruit_choice)
 
 #############  Below code moved above into the else statement  #################
